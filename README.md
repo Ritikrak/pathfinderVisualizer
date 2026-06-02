@@ -1,16 +1,128 @@
-# React + Vite
+# Pathfinder Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based pathfinding visualizer built with **React**, **JavaScript**, **HTML**, and **CSS** that demonstrates how **Dijkstra's Algorithm** finds the shortest path between two nodes in a grid.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Interactive grid visualization
+* Start and finish node selection
+* Wall/obstacle creation
+* Dijkstra's shortest path algorithm implementation
+* Animated node exploration
+* Shortest path highlighting
+* Responsive and user-friendly interface
 
-## React Compiler
+## 🖼️ Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application visualizes how Dijkstra's Algorithm explores nodes and determines the shortest path from the start node to the destination node while avoiding obstacles.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Vite
+
+## 📂 Project Structure
+
+```text
+src/
+├── algorithms/
+│   └── dijkstra.js
+├── PathfindingVisualizer/
+│   ├── Node/
+│   │   ├── Node.jsx
+│   │   └── Node.css
+│   ├── PathfindingVisualizer.jsx
+│   └── PathfindingVisualizer.css
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## 🧠 Dijkstra's Algorithm
+
+Dijkstra's Algorithm is a graph traversal algorithm used to find the shortest path between nodes in a weighted graph.
+
+### Steps
+
+1. Start at the source node.
+2. Mark all nodes as unvisited.
+3. Assign a tentative distance value:
+
+   * Source node = 0
+   * All other nodes = Infinity
+4. Visit the unvisited node with the smallest distance.
+5. Update distances of its neighboring nodes.
+6. Repeat until the destination node is reached.
+7. Reconstruct and display the shortest path.
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/pathfinder-visualizer.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd pathfinder-visualizer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+## 🎮 Usage
+
+1. Launch the application.
+2. Create walls by clicking or dragging on the grid.
+3. Select the start and finish nodes.
+4. Click the **Visualize Dijkstra** button.
+5. Watch the algorithm explore the grid and find the shortest path.
+
+## 📈 Future Improvements
+
+* A* Search Algorithm
+* Breadth First Search (BFS)
+* Depth First Search (DFS)
+* Weighted nodes
+* Maze generation
+* Speed controls
+* Mobile optimization
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a new feature branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👨‍💻 Author
+
+Developed as a learning project to understand pathfinding algorithms, graph traversal, React component architecture, and algorithm visualization.
+
