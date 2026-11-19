@@ -1,8 +1,12 @@
 {
   "name": "pathfinder",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "A web-based pathfinding visualizer built with **React**, **JavaScript**, **HTML**, and **CSS** that demonstrates how **Dijkstra's Algorithm** finds the shortest path between two nodes in a grid.",
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
